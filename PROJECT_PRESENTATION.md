@@ -14,14 +14,27 @@ I have brainstormed options using the Disney Ideation method. See link to the do
 
 The goal of your challenge is to write a CodeWars kata that:
 
-Given two arrays, one containing a list of Pokemon and the other one containing the correspondent Pokemon type, write a function that return one array containing the Pokemon type combination sorted in ascending order.
+Given two arrays, one containing a list of Pokemons and the other one containing their corresponding types, write a function that return one array where each element is itself an array of the two elements ["Pokemon", "Type"] sorted in ascending order.
+
+You will always be given arrays of the same length. If there is a null element in either of the two initial arrays, the function should not return that combination of Pokémon and type.
 
 Example:
 
-Given ["Charmander", "Bulbasaur", "Squirtle", "Pikachu"], and ["Fire", "Grass", "Water", "Electric"] your function should return:
-[["Charmander", "Fire"], ["Bulbasaur", "Grass"], ["Squirtle", "Water"],["Pikachu", "Electric"]].
+Given:
 
-If one element of the array is not specified it should be ignored.
+["Charmander", "Bulbasaur", "Squirtle", "Pikachu"], and ["Fire", "Grass", "Water", "Electric"]
+
+your function should return:
+
+[["Bulbasaur", "Grass"], ["Charmander", "Fire"], ["Pikachu", "Electric"], ["Squirtle", "Water"]].
+
+Given:
+
+["Charmander", "Bulbasaur", "Squirtle",], and ["Fire", "Grass", "Water", "Electric"]
+
+your function should return:
+
+[["Bulbasaur", "Grass"], ["Charmander", "Fire"], ["Squirtle", "Water"]].
 
 Please, keep in mind, that JavaScript is by default sorting objects alphabetically. For more information, please consult:
 
