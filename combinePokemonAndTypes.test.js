@@ -14,16 +14,6 @@ describe("combinePokemonAndTypes function", () => {
     ]);
   });
 
-  it("should ignore combinations with null elements", () => {
-    const pokemon = ["Pikachu", "null", "Squirtle"];
-    const types = ["Electric", "Fire", "Water"];
-
-    expect(combinePokemonAndTypes(pokemon, types)).toEqual([
-      ["Pikachu", "Electric"],
-      ["Squirtle", "Water"],
-    ]);
-  });
-
   it("should handle arrays of different lengths", () => {
     const pokemon = ["Pikachu", "Charmander", "Squirtle"];
     const types = ["Electric", "Fire"];

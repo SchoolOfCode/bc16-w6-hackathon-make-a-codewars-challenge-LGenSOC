@@ -16,7 +16,7 @@ The goal of your challenge is to write a CodeWars kata that:
 
 Given two arrays, one containing a list of Pokemons and the other one containing their corresponding types, write a function that return one array where each element is itself an array of the two elements ["Pokemon", "Type"] sorted in ascending order.
 
-You will always be given arrays of the same length. If there is a null element in either of the two initial arrays, the function should not return that combination of Pokémon and type.
+If the two arrays are of different lenght the function should ingore the Pokemon/type combination for that index.
 
 Example:
 
